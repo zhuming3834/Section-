@@ -14,6 +14,9 @@
 		C33E77B81BDB2413003DB452 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33E77B71BDB2413003DB452 /* Images.xcassets */; };
 		C33E77BB1BDB2413003DB452 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33E77B91BDB2413003DB452 /* LaunchScreen.xib */; };
 		C33E77C71BDB2413003DB452 /* Section______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C33E77C61BDB2413003DB452 /* Section______Tests.m */; };
+		C33E77D11BDB3478003DB452 /* itembg.png in Resources */ = {isa = PBXBuildFile; fileRef = C33E77D01BDB3478003DB452 /* itembg.png */; };
+		C33E77D51BDB3531003DB452 /* SectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33E77D31BDB3531003DB452 /* SectionViewController.m */; };
+		C33E77D61BDB3531003DB452 /* SectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33E77D41BDB3531003DB452 /* SectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		C33E77C01BDB2413003DB452 /* Section的展开和收起Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Section的展开和收起Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33E77C51BDB2413003DB452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C33E77C61BDB2413003DB452 /* Section______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Section______Tests.m"; sourceTree = "<group>"; };
+		C33E77D01BDB3478003DB452 /* itembg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itembg.png; sourceTree = "<group>"; };
+		C33E77D21BDB3531003DB452 /* SectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionViewController.h; sourceTree = "<group>"; };
+		C33E77D31BDB3531003DB452 /* SectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionViewController.m; sourceTree = "<group>"; };
+		C33E77D41BDB3531003DB452 /* SectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +88,14 @@
 		C33E77A91BDB2412003DB452 /* Section的展开和收起 */ = {
 			isa = PBXGroup;
 			children = (
+				C33E77D01BDB3478003DB452 /* itembg.png */,
 				C33E77AE1BDB2413003DB452 /* AppDelegate.h */,
 				C33E77AF1BDB2413003DB452 /* AppDelegate.m */,
 				C33E77B11BDB2413003DB452 /* ViewController.h */,
 				C33E77B21BDB2413003DB452 /* ViewController.m */,
+				C33E77D21BDB3531003DB452 /* SectionViewController.h */,
+				C33E77D31BDB3531003DB452 /* SectionViewController.m */,
+				C33E77D41BDB3531003DB452 /* SectionViewController.xib */,
 				C33E77B41BDB2413003DB452 /* Main.storyboard */,
 				C33E77B71BDB2413003DB452 /* Images.xcassets */,
 				C33E77B91BDB2413003DB452 /* LaunchScreen.xib */,
@@ -200,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33E77B61BDB2413003DB452 /* Main.storyboard in Resources */,
+				C33E77D11BDB3478003DB452 /* itembg.png in Resources */,
 				C33E77BB1BDB2413003DB452 /* LaunchScreen.xib in Resources */,
+				C33E77D61BDB3531003DB452 /* SectionViewController.xib in Resources */,
 				C33E77B81BDB2413003DB452 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +234,7 @@
 			files = (
 				C33E77B31BDB2413003DB452 /* ViewController.m in Sources */,
 				C33E77B01BDB2413003DB452 /* AppDelegate.m in Sources */,
+				C33E77D51BDB3531003DB452 /* SectionViewController.m in Sources */,
 				C33E77AD1BDB2412003DB452 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				INFOPLIST_FILE = "Section的展开和收起/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				INFOPLIST_FILE = "Section的展开和收起/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -367,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
